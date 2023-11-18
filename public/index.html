@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Task</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <form class="form" action="" method="post">
+          <label class="form-label" for="task">Task Manager</label>
+          <div class="input-container">
+            <input
+              class="input"
+              type="text"
+              name="task"
+              id=""
+              placeholder="e.g. iron clothes"
+            />
+            <button class="submit-btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </header>
+    </main>
+    <p class="completed">edit successful</p>
+    <section class="todo">
+      <li class="todo-list">
+        <ul class="list">
+          <div class="list-body">
+            <div class="task-detail-info">
+              <span class="material-symbols-outlined"> check_box </span>
+              <h3>Walk the Cat</h3>
+            </div>
+            <div class="icons">
+              <a href="task.html?id=${taskID}">
+                <span class="material-symbols-outlined"> edit_square </span>
+              </a>
+              <span class="material-symbols-outlined delete-btn"> delete </span>
+            </div>
+          </div>
+        </ul>
+        <ul class="list">
+          <div class="list-body">
+            <h3>Walk the Cat</h3>
+            <div class="icons">
+              <span class="material-symbols-outlined"> edit_square </span>
+              <span class="material-symbols-outlined"> delete </span>
+            </div>
+          </div>
+        </ul>
+      </li>
+    </section>
+    <div class="loading">
+      <h2>loading...</h2>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
